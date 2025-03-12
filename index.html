@@ -3,106 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Formulario</title>
+    <title>Formulário</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="assets/favicon3.jpg" type="image/x-icon">
-
 </head>
-
 <body>
-    <main>
+    <main class="container">
         <div class="main-content">
-
-            <!-- Lado Esquerdo -->
-            <div class="leftside">
-                <div class="info-left"> <!-- Lado Esquerdo Login -->
-                    <h1>Bem Vindo!</h1>
-                    <p>
-                        Explore milhares de mangás online com atualizações diárias e leitura gratuita. 
-                        Entre agora e mergulhe no universo dos seus mangás favoritos!
-                    </p>
-                    <a href="" class="button-login">
-                        Faça seu Login
-                    </a>
-                </div>
-            </div>
-
-            <div class="leftside-r">
-                <div class="info-left-register"><!-- Lado Esquerdo Cadastro -->
-                    <h1>Bem Vindo!</h1>
-                    <p>
-                        Explore milhares de mangás online com atualizações diárias e leitura gratuita. 
-                        Entre agora e mergulhe no universo dos seus mangás favoritos!
-                    </p>
-                    <a href="" class="button-register">
-                        Cadastre-se
-                    </a>
-                </div>
-            </div>
-
             
-
-            <!-- Lado Direito -->
-            <div class="rightside">
-                <!-- Formulário de Cadastro -->
-                <div class="register-form">
-                    <h1>Crie sua conta</h1>
-                    <form action="#" method="post">
-                        <div class="info-form">
-                            <div class="info-form-op">
-                                <div class="info-form-text">
-                                    <img src="assets/user-icon.png">
-                                    <input type="text" name="user" id="user" placeholder="Usuario" required>
-                                </div>
-                            </div>
-                            <div class="info-form-op">
-                                <div class="info-form-text">
-                                    <img src="assets/email-icon.png">
-                                    <input type="email" name="email" id="email" placeholder="E-mail" required>
-                                </div>
-                            </div>
-                            <div class="info-form-op">
-                                <div class="info-form-text">
-                                    <img src="assets/simbolo-de-cadeado-para-interface-de-seguranca.png">
-                                    <input type="password" name="pass" id="pass" placeholder="Senha" required>
-                                </div>
-                            </div>
-                            <button type="submit" class="button-cadastro">Cadastrar</button>
-                        </div>
-                    </form>
+            <!-- Seção Esquerda (Login/Cadastro) -->
+            <section class="left-container">
+                <!-- Login -->
+                <div class="leftside">
+                    <div class="info-left">
+                        <h1>Bem Vindo!</h1>
+                        <p>Explore milhares de mangás online com atualizações diárias e leitura gratuita. 
+                        Entre agora e mergulhe no universo dos seus mangás favoritos!</p>
+                        <a href="#" class="button-login">Faça seu Login</a>
+                    </div>
                 </div>
-
-                <!-- Formulário de Login -->
-                <div class="login-form">
-                    <h1>Entre agora</h1>
-                    <form action="#" method="post">
-                        <div class="info-form">
-
-                            <div class="info-form-op">
-                                <div class="info-form-text">
-                                    <img src="assets/user-icon.png">
-                                    <input type="text" name="user" id="user" placeholder="Usuario" required>
-                                </div>
-                            </div>
-
-                            <div class="info-form-op">
-                                <div class="info-form-text">
-                                    <img src="assets/simbolo-de-cadeado-para-interface-de-seguranca.png">
-                                    <input type="password" name="pass" id="pass" placeholder="Senha" required>
-                                </div>
-                            </div>
-
-                            <button type="submit" class="button-login">Entrar</button>
-                    </form>
-
+                
+                <!-- Cadastro -->
+                <div class="leftside-r">
+                    <div class="info-left-register">
+                        <h1>Bem Vindo!</h1>
+                        <p>Explore milhares de mangás online com atualizações diárias e leitura gratuita. 
+                        Entre agora e mergulhe no universo dos seus mangás favoritos!</p>
+                        <a href="#" class="button-register">Cadastre-se</a>
+                    </div>
                 </div>
-            </div>
+            </section>
+            
+            <!-- Seção Direita (Formulários) -->
+            <section class="right-container">
+                <div class="rightside">
+                    <!-- Formulário de Cadastro -->
+                    <div class="register-form">
+                        <h1>Crie sua conta</h1>
+                        <form action="#" method="post">
+                            <div class="info-form">
+                                <div class="info-form-op">
+                                    <div class="info-form-text">
+                                        <img src="assets/user-icon.png" alt="Ícone de usuário">
+                                        <input type="text" name="user" id="user" placeholder="Usuário" required>
+                                    </div>
+                                </div>
+                                <div class="info-form-op">
+                                    <div class="info-form-text">
+                                        <img src="assets/email-icon.png" alt="Ícone de e-mail">
+                                        <input type="email" name="email" id="email" placeholder="E-mail" required>
+                                    </div>
+                                </div>
+                                <div class="info-form-op">
+                                    <div class="info-form-text">
+                                        <img src="assets/simbolo-de-cadeado-para-interface-de-seguranca.png" alt="Ícone de senha">
+                                        <input type="password" name="pass" id="pass" placeholder="Senha" required>
+                                    </div>
+                                </div>
+                                <button type="submit" class="button-cadastro">Cadastrar</button>
+                            </div>
+                        </form>
+                    </div>
 
-
+                    <!-- Formulário de Login -->
+                    <div class="login-form">
+                        <h1>Entre agora</h1>
+                        <form action="#" method="post">
+                            <div class="info-form">
+                                <div class="info-form-op">
+                                    <div class="info-form-text">
+                                        <img src="assets/user-icon.png" alt="Ícone de usuário">
+                                        <input type="text" name="user" id="user" placeholder="Usuário" required>
+                                    </div>
+                                </div>
+                                <div class="info-form-op">
+                                    <div class="info-form-text">
+                                        <img src="assets/simbolo-de-cadeado-para-interface-de-seguranca.png" alt="Ícone de senha">
+                                        <input type="password" name="pass" id="pass" placeholder="Senha" required>
+                                    </div>
+                                </div>
+                                <button type="submit" class="button-login">Entrar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
     <script src="js/script.js"></script>
 </body>
-
 </html>
